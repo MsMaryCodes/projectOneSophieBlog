@@ -1,0 +1,32 @@
+ul {
+    padding-left: 0;
+    list-style: none;
+
+    a {
+        text-decoration: none;
+        color: $black;
+    }
+}
+
+html {
+    font-size: 125%;
+    letter-spacing: 1px;
+}
+
+h1 {
+    font-family: 'Lora', serif;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 4rem;
+}
+
+h2, h3, h4, h5, button, a {
+    font-family: 'Roboto', sans-serif;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+p {
+    font-family: 'Roboto', sans-serif;
+    font-weight:400;
+}

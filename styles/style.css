@@ -225,3 +225,35 @@ html {
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
+
+ul {
+  padding-left: 0;
+  list-style: none;
+}
+ul a {
+  text-decoration: none;
+  color: #2c2c2c;
+}
+
+html {
+  font-size: 125%;
+  letter-spacing: 1px;
+}
+
+h1 {
+  font-family: "Lora", serif;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 4rem;
+}
+
+h2, h3, h4, h5, button, a {
+  font-family: "Roboto", sans-serif;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+p {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+}
