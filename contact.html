@@ -33,36 +33,38 @@
     </header>
 
     <main>
-        <div class="wrapper">
-            <div class="leftContainer">
-                <ul>
-                    <li><a href="#"><!-- facebook icon --></a></li>
-                    <li><a href="#"><!-- twitter icon --></a></li>
-                    <li><a href="#"><!-- linkedIn icon --></a></li>
-                    <li><a href="#"><!-- instagram icon --></a></li>
-                </ul>
-                <div class="infoContainer">
-                    <h5>info@gmail.com</h5>
-                    <p>123 - 456 - 7890</p>
-                    <p>123 Queen Street West, Unit 10</p>
-                    <p>Toronto, Ontario</p>
-                    <p>M5V2D5</p>
+        <section class="mainSection">
+            <div class="wrapper">
+                <div class="leftContainer">
+                    <ul>
+                        <li><a href="#"><!-- facebook icon --></a></li>
+                        <li><a href="#"><!-- twitter icon --></a></li>
+                        <li><a href="#"><!-- linkedIn icon --></a></li>
+                        <li><a href="#"><!-- instagram icon --></a></li>
+                    </ul>
+                    <div class="infoContainer">
+                        <h5>info@gmail.com</h5>
+                        <p>123 - 456 - 7890</p>
+                        <p>123 Queen Street West, Unit 10</p>
+                        <p>Toronto, Ontario</p>
+                        <p>M5V2D5</p>
+                    </div>
+                </div>
+                <div class="rightContainer">
+                    <form action="submit">
+                        <div class="firstLine">
+                            <label for="name" class="sr-only">Name</label>
+                            <input type="text" name="name" id="nameInput" placeholder="Name">
+                            <label for="email" class="sr-only">Email Address</label>
+                            <input type="email" name="email" id="emailInput" placeholder="Email address">
+                        </div>
+                        <label for="message" class="sr-only">Your message</label>
+                        <textarea name="message" id="messageInput" cols="30" rows="10" placeholder="Message"></textarea>
+                        <button class="submitBtn">Submit</button>
+                    </form>
                 </div>
             </div>
-            <div class="rightContainer">
-                <form action="submit">
-                    <div class="firstLine">
-                        <label for="name" class="sr-only">Name</label>
-                        <input type="text" name="name" id="nameInput" placeholder="Name">
-                        <label for="email" class="sr-only">Email Address</label>
-                        <input type="email" name="email" id="emailInput" placeholder="Email address">
-                    </div>
-                    <label for="message" class="sr-only">Your message</label>
-                    <textarea name="message" id="messageInput" cols="30" rows="10" placeholder="Message"></textarea>
-                    <button class="submitBtn">Submit</button>
-                </form>
-            </div>
-        </div>
+        </section>
     </main>
 
 
