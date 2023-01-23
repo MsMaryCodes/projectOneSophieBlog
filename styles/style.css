@@ -252,21 +252,16 @@ h1 {
 }
 
 h2, h3, h4, h5, button, a {
-  font-family: "Roboto", sans-serif;
+  font-family: "Roboto", san-serif;
   text-transform: uppercase;
   font-weight: 700;
 }
 
 p {
-  font-family: "Roboto", sans-serif;
+  font-family: "Roboto", san-serif;
   font-weight: 400;
   font-size: 1rem;
-}
-
-.btn {
-  color: #2c2c2c;
-  font-size: 1rem;
-  line-height: 32px;
+  margin: 0;
 }
 
 img {
@@ -278,6 +273,21 @@ img {
 .wrapper {
   max-width: 1280px;
   margin: 0 7rem;
+}
+
+.btn {
+  color: #2c2c2c;
+  font-size: 1rem;
+  line-height: 32px;
+  background-color: #05afc1;
+  padding: 12px 20px;
+  -webkit-transition: 0.7s;
+  transition: 0.7s;
+}
+
+.btn:hover, .btn:focus {
+  color: #f0efed;
+  background-color: #285e64;
 }
 
 nav {
@@ -381,4 +391,13 @@ nav ul :nth-child(5) {
 }
 .homeHeader .headerContainer .headerImg img {
   height: 100%;
+}
+
+footer {
+  background-color: #4f4f4f;
+  padding: 12px 0;
+}
+footer p {
+  text-align: center;
+  color: white;
 }

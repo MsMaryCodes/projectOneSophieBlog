@@ -15,7 +15,7 @@ html {
 }
 
 h1 {
-    font-family: 'Lora', serif;
+    font-family: $titleFont;
     text-transform: uppercase;
     font-weight: 700;
     font-size: 5rem;
@@ -24,21 +24,16 @@ h1 {
 }
 
 h2, h3, h4, h5, button, a {
-    font-family: 'Roboto', sans-serif;
+    font-family: $bodyFont;
     text-transform: uppercase;
     font-weight: 700;
 }
 
 p {
-    font-family: 'Roboto', sans-serif;
+    font-family: $bodyFont;
     font-weight:400;
     font-size: 1rem;
-}
-
-.btn {
-    color: $black;
-    font-size: 1rem;
-    line-height: 32px;
+    margin: 0;
 }
 
 img {
@@ -52,3 +47,16 @@ img {
 }
 
 // button styling
+.btn {
+    color: $black;
+    font-size: 1rem;
+    line-height: 32px;
+    background-color: $aqua;
+    padding: 12px 20px;
+    transition: 0.7s;
+}
+
+.btn:hover, .btn:focus {
+    color: $lightGray;
+    background-color: $teal;
+}
