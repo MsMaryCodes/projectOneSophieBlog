@@ -18,7 +18,9 @@ h1 {
     font-family: 'Lora', serif;
     text-transform: uppercase;
     font-weight: 700;
-    font-size: 4rem;
+    font-size: 5rem;
+    line-height: 92px;
+    margin: 0;
 }
 
 h2, h3, h4, h5, button, a {
@@ -42,4 +44,9 @@ p {
 img {
     width: 100%;
     object-fit: cover;
+}
+
+.wrapper {
+    max-width: 1280px;
+    margin: 0 7rem;
 }

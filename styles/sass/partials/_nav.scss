@@ -3,22 +3,31 @@ nav {
     padding: 20px 0;
     position: sticky;
     top: 0;
-    
+
     ul {
         display: flex;
         justify-content: center;
 
         li {
             margin: 0 20px;
-            a {
-                    line-height: 29px;
-                    letter-spacing: 1px;
-                    transition-duration: 0.5s;
-                }
 
-            a:hover, a:focus {
-            color: $white;
-                }
+            a {
+                line-height: 29px;
+                letter-spacing: 1px;
+                transition-duration: 0.5s;
+
+
+            }
+
+            .currentPage {
+                color: $white;
+            }
+
+            a:hover,
+            a:focus {
+                color: $white;
+            }
+
 
             .logo {
                 font-family: 'lora', serif;
@@ -32,24 +41,28 @@ nav {
                 // figure out how to transition scale
             }
 
-            }
-        
+        }
+
         :nth-child(1) {
             order: 3;
         }
+
         :nth-child(2) {
             order: 1;
         }
+
         :nth-child(3) {
             order: 2;
         }
+
         :nth-child(4) {
             order: 4;
         }
+
         :nth-child(5) {
             order: 5;
         }
-        
+
     }
 }
 

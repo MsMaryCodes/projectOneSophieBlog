@@ -1,0 +1,26 @@
+.homeHeader {
+    background: $yellow;
+    height: 65vh;
+    
+
+    .homeTitle {
+        position: relative;
+        height: 100%;
+
+        h1 {
+            position: absolute;
+            top: 40%;
+            left: 8rem;
+        }
+
+        .titleTag {
+            object-fit: contain;
+            width: 140px;
+            position: absolute;
+            top: 32%;
+            left: 6rem;
+        }
+    }
+    
+}
+
