@@ -1,10 +1,13 @@
+// home page (index)
 .homeHeader {
     background: $yellow;
     height: 65vh;
+    position: relative;
     
-
     .homeTitle {
-        position: relative;
+        position: absolute;
+        top: 0;
+        left: 0;
         height: 100%;
 
         h1 {
@@ -21,6 +24,22 @@
             left: 6rem;
         }
     }
-    
+
+    .headerContainer {
+        position: absolute;
+        right: 0;
+        bottom: -50px;
+
+        .headerImg {
+            object-fit: contain;
+            width: 400px;
+            height: 560px;
+            box-shadow: 15px 15px white;
+
+            img {
+                height: 100%;
+            }
+        }
+    }
 }
 

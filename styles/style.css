@@ -304,11 +304,11 @@ nav ul li a {
           transition-duration: 0.5s;
 }
 nav ul li .currentPage {
-  color: #f0efed;
+  color: white;
 }
 nav ul li a:hover,
 nav ul li a:focus {
-  color: #f0efed;
+  color: white;
 }
 nav ul li .logo {
   font-family: "lora", serif;
@@ -345,9 +345,12 @@ nav ul :nth-child(5) {
 .homeHeader {
   background: #f6a823;
   height: 65vh;
+  position: relative;
 }
 .homeHeader .homeTitle {
-  position: relative;
+  position: absolute;
+  top: 0;
+  left: 0;
   height: 100%;
 }
 .homeHeader .homeTitle h1 {
@@ -362,4 +365,20 @@ nav ul :nth-child(5) {
   position: absolute;
   top: 32%;
   left: 6rem;
+}
+.homeHeader .headerContainer {
+  position: absolute;
+  right: 0;
+  bottom: -50px;
+}
+.homeHeader .headerContainer .headerImg {
+  -o-object-fit: contain;
+     object-fit: contain;
+  width: 400px;
+  height: 560px;
+  -webkit-box-shadow: 15px 15px white;
+          box-shadow: 15px 15px white;
+}
+.homeHeader .headerContainer .headerImg img {
+  height: 100%;
 }
