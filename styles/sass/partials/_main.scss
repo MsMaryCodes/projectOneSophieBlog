@@ -1,0 +1,33 @@
+// home page section
+.homeSectionOne, 
+.homeSectionThree, .homeSectionFive 
+{
+    background-color: $lightGray;
+}
+
+.homeSectionThree {
+
+    .textBox {
+        display: flex;
+        width: 45vw;
+
+        .icon {
+            background-color: $yellow;
+            border-radius: 50%;
+            width: 15px;
+            height: 15px;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            
+        }
+    }
+}
+
+.homeSectionFour {
+    background: url(../assets/home-image-4.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 50vh;
+}

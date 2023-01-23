@@ -27,6 +27,17 @@ h2, h3, h4, h5, button, a {
     font-family: $bodyFont;
     text-transform: uppercase;
     font-weight: 700;
+    margin: 0;
+}
+
+h2 {
+    font-size: 2.1rem;
+    letter-spacing: 1px;
+}
+
+h3 {
+    font-size: 1.6rem;
+    letter-spacing: 1px;
 }
 
 p {
@@ -34,6 +45,7 @@ p {
     font-weight:400;
     font-size: 1rem;
     margin: 0;
+    line-height: 29px;
 }
 
 img {

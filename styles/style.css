@@ -255,6 +255,17 @@ h2, h3, h4, h5, button, a {
   font-family: "Roboto", san-serif;
   text-transform: uppercase;
   font-weight: 700;
+  margin: 0;
+}
+
+h2 {
+  font-size: 2.1rem;
+  letter-spacing: 1px;
+}
+
+h3 {
+  font-size: 1.6rem;
+  letter-spacing: 1px;
 }
 
 p {
@@ -262,6 +273,7 @@ p {
   font-weight: 400;
   font-size: 1rem;
   margin: 0;
+  line-height: 29px;
 }
 
 img {
@@ -295,6 +307,7 @@ nav {
   padding: 20px 0;
   position: sticky;
   top: 0;
+  z-index: 100;
 }
 nav ul {
   display: -webkit-box;
@@ -391,6 +404,41 @@ nav ul :nth-child(5) {
 }
 .homeHeader .headerContainer .headerImg img {
   height: 100%;
+}
+
+.homeSectionOne,
+.homeSectionThree, .homeSectionFive {
+  background-color: #f0efed;
+}
+
+.homeSectionThree .textBox {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 45vw;
+}
+.homeSectionThree .textBox .icon {
+  background-color: #f6a823;
+  border-radius: 50%;
+  width: 15px;
+  height: 15px;
+  padding: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.homeSectionFour {
+  background: url(../assets/home-image-4.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 50vh;
 }
 
 footer {
