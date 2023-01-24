@@ -246,7 +246,7 @@ h1 {
   font-family: "Lora", serif;
   text-transform: uppercase;
   font-weight: 700;
-  font-size: 8rem;
+  font-size: 4rem;
   line-height: 92px;
   margin: 0;
 }
@@ -297,8 +297,8 @@ img {
   line-height: 32px;
   background-color: #05afc1;
   padding: 12px 20px;
-  -webkit-transition: 0.7s;
-  transition: 0.7s;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
 }
 
 .btn:hover, .btn:focus {
@@ -385,6 +385,7 @@ nav ul :nth-child(5) {
   position: absolute;
   top: 40%;
   left: 8rem;
+  font-size: 8rem;
 }
 .homeHeader .homeTitle .titleTag {
   -o-object-fit: contain;
@@ -410,6 +411,23 @@ nav ul :nth-child(5) {
           box-shadow: 20px 20px white;
 }
 
+.otherHeader {
+  background-image: url(../assets/contact-image-1.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 40vh;
+}
+.otherHeader .wrapper {
+  position: relative;
+  height: 100%;
+  width: 100%;
+}
+.otherHeader .wrapper h1 {
+  position: absolute;
+  left: 0;
+  bottom: -40px;
+}
+
 .homeSectionOne,
 .homeSectionThree, .homeSectionFive {
   background-color: #f0efed;
@@ -423,7 +441,7 @@ main section {
       -ms-flex-pack: center;
           justify-content: center;
 }
-main p {
+main section p {
   margin-bottom: 35px;
 }
 
@@ -507,6 +525,114 @@ main p {
 }
 .homeSectionSix ul li img:focus, .homeSectionSix ul li img:hover {
   opacity: 0.7;
+}
+
+.contactSection {
+  background-color: #f0efed;
+}
+.contactSection .wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  gap: 50px;
+}
+.contactSection .wrapper .leftContainer {
+  background-color: white;
+  padding: 35px;
+  width: 30%;
+  min-width: 360px;
+  height: 310px;
+}
+.contactSection .wrapper .leftContainer .smIcons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 20px;
+  margin: 20px 0;
+}
+.contactSection .wrapper .leftContainer .smIcons i {
+  font-size: 1.5rem;
+  color: #f6a823;
+}
+.contactSection .wrapper .leftContainer .smIcons i:hover, .contactSection .wrapper .leftContainer .smIcons i:focus {
+  color: #4f4f4f;
+}
+.contactSection .wrapper .leftContainer h5 {
+  margin-bottom: 15px;
+  text-transform: lowercase;
+  font-size: 1.2rem;
+}
+.contactSection .wrapper .leftContainer p {
+  margin-bottom: 0;
+  letter-spacing: 0;
+}
+.contactSection .wrapper .rightContainer {
+  width: 65%;
+}
+.contactSection .wrapper .rightContainer form input, .contactSection .wrapper .rightContainer form textarea {
+  border: none;
+}
+.contactSection .wrapper .rightContainer form .firstLine {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 12px;
+  margin-bottom: 20px;
+}
+.contactSection .wrapper .rightContainer form .firstLine input {
+  width: 50%;
+  padding: 25px 15px;
+}
+.contactSection .wrapper .rightContainer form .firstLine input:-moz-placeholder-shown {
+  font-style: italic;
+  color: #4f4f4f;
+}
+.contactSection .wrapper .rightContainer form .firstLine input:-ms-input-placeholder {
+  font-style: italic;
+  color: #4f4f4f;
+}
+.contactSection .wrapper .rightContainer form .firstLine input:placeholder-shown {
+  font-style: italic;
+  color: #4f4f4f;
+}
+.contactSection .wrapper .rightContainer form textarea {
+  width: 100%;
+  padding: 25px 15px;
+}
+.contactSection .wrapper .rightContainer form input:-moz-placeholder-shown, .contactSection .wrapper .rightContainer form textarea:-moz-placeholder-shown {
+  font-style: italic;
+  color: #4f4f4f;
+}
+.contactSection .wrapper .rightContainer form input:-ms-input-placeholder, .contactSection .wrapper .rightContainer form textarea:-ms-input-placeholder {
+  font-style: italic;
+  color: #4f4f4f;
+}
+.contactSection .wrapper .rightContainer form input:placeholder-shown,
+.contactSection .wrapper .rightContainer form textarea:placeholder-shown {
+  font-style: italic;
+  color: #4f4f4f;
+}
+
+.submitBtn {
+  color: #2c2c2c;
+  font-size: 1rem;
+  line-height: 32px;
+  background-color: #05afc1;
+  padding: 8px 20px;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  width: 100%;
+  border: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  margin: 20px 0;
+}
+
+.submitBtn:hover,
+.submitBtn:focus {
+  color: #f0efed;
+  background-color: #285e64;
 }
 
 footer {
