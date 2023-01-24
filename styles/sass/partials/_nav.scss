@@ -3,25 +3,29 @@ nav {
     padding: 20px 0;
     position: sticky;
     top: 0;
-    z-index: 100;
+    z-index: 300;
 
     ul {
         display: flex;
         justify-content: center;
+        
+        .logo {
+            font-family: 'lora', serif;
+            font-size: 2rem;
+            transition: 0.3s ease-in-out;
+        }
+
+        .currentPage {
+            color: $white;
+        }
 
         li {
             margin: 0 20px;
+            line-height: 29px;
+            letter-spacing: 1px;
 
             a {
-                line-height: 29px;
-                letter-spacing: 1px;
                 transition-duration: 0.5s;
-
-
-            }
-
-            .currentPage {
-                color: $white;
             }
 
             a:hover,
@@ -29,23 +33,11 @@ nav {
                 color: $white;
             }
 
-            .logo {
-                font-family: 'lora', serif;
-                font-size: 2rem;
-                transition: 0.3s ease-in-out;
-
                 // &:hover {
                 //     transform: scale(0.90);
                 // }
 
                 // figure out how to transition scale
-            }
-
-            .currentPage:hover,
-            .currentPage:focus {
-                color: $gray;
-            }
-
         }
 
         :nth-child(1) {
