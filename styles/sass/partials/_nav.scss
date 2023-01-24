@@ -29,17 +29,21 @@ nav {
                 color: $white;
             }
 
-
             .logo {
                 font-family: 'lora', serif;
                 font-size: 2rem;
-                transition: 0.5s ease-in-out;
+                transition: 0.3s ease-in-out;
 
                 // &:hover {
                 //     transform: scale(0.90);
                 // }
 
                 // figure out how to transition scale
+            }
+
+            .currentPage:hover,
+            .currentPage:focus {
+                color: $gray;
             }
 
         }

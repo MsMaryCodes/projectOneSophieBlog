@@ -9,6 +9,7 @@
         top: 0;
         left: 0;
         height: 100%;
+        z-index: 100;
 
         h1 {
             position: absolute;
@@ -18,9 +19,9 @@
 
         .titleTag {
             object-fit: contain;
-            width: 140px;
+            width: 190px;
             position: absolute;
-            top: 32%;
+            top: 26%;
             left: 6rem;
         }
     }
@@ -29,11 +30,13 @@
         position: absolute;
         right: 0;
         bottom: -50px;
+        max-width: 1280px;
+        margin: 0 6rem;
 
         .headerImg {
-            object-fit: contain;
-            width: 400px;
-            height: 560px;
+            object-fit: cover;
+            height: 679px;
+            width: 480px;
             box-shadow: 15px 15px $white;
 
             img {
