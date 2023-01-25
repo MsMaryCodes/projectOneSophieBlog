@@ -17,6 +17,22 @@
         margin: 0 1.2rem;
     }
 
+    form {
+        .firstLine {
+            flex-direction: column;
+            gap: 15px;
+            margin-bottom: 15px;
+
+            input {
+                width: 100%;
+            }
+        }
+
+        textarea {
+            height: 35vh;
+        }
+    }
+
     //nav 
     nav {
         padding: 12px 0;
@@ -37,7 +53,174 @@
         }
     }
     
-    //index nav 
+    //hamburger menu
+
+    //header
+    .homeHeader {
+        height: 80vh;
+
+        .homeTitle {
+            h1 {
+                font-size: 4.4rem;
+                top: 38%;
+                left: 3rem;
+            }
+
+            .titleTag {
+                width: 110px;
+                top: 32%;
+                left: 2rem;
+            }
+        }
+
+        .headerContainer {
+
+            .headerImg {
+                width: 65vw;
+                box-shadow: 15px 15px $white;
+            }
+        }
+    }
+
+    .blogHeader {
+        background-position: -420px center;
+    }
+
+    .construction {
+        font-size: 2.4rem;
+    }
+
+
+    // main
+    // home
+    .homeSectionOne {
+        text-align: center;
+        padding-top: 10px;
+    }
+
+    .homeSectionTwo {
+        .wrapper .quadrant {
+            flex-direction: column;
+            justify-content: flex-start;
+            height: inherit;
+            align-items: center;
+
+            .textContainer {
+                width: 100%;
+
+                .btn {
+                    align-self: center;
+                }
+
+                h3, p {
+                    text-align: center;
+                }
+
+            }
+
+            .imgContainer {
+                width: 100%;
+            }
+        }
+    }
+
+    .homeSectionThree {
+        .wrapper {
+            flex-direction: column;
+            width: 100%;
+
+            .textBox {
+                width: 100%;
+                max-width: 100vw;
+
+                .icon {
+                    margin-right: 0;
+                    width: 70px;
+                    height: 70px;
+                    text-align: center;
+
+                    i {
+                        font-size: 1.5rem;
+                    }
+                }
+            }
+        }
+    }
+
+    .homeSectionFour {
+        height: 36vh;
+    }
+
+    .homeSectionFive {
+        .wrapper {
+            flex-direction: column;
+            align-items: center;
+
+            .imgContainer {
+                width: 78%;
+                margin-bottom: 40px;
+            }
+
+            .textContainer {
+                width: 100%;
+                text-align: center;
+            }
+        }
+    }
+
+    .homeSectionSix {
+        ul {
+            flex-direction: column;
+
+            li {
+                width: 100%;
+            }
+        }
+    }
+
+    // construction
+    .constructionSection {
+        text-align: center;
+    }
+
+    // blog
+    .blogSection {
+        .wrapper {
+            .leftContainer {
+
+                .profileInfo {
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    text-align: center;
+
+                    .profileImgContainer {
+                        width: 100%;
+                        height: 350px;
+                    }
+                }
+            }
+
+            .rightContainer {
+                .postContainer,
+                .firstComment,
+                .secondComment {
+                    padding: 20px;
+                }
+            }
+
+            .firstComment,
+            .secondComment {
+                flex-direction: column;
+                align-items: center;
+                gap: 12px;
+
+                .comImgContainer {
+                    width: 120px;
+                }
+            }
+        }
+    }
 
 
     

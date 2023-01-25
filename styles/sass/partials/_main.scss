@@ -213,17 +213,18 @@ form {
     .wrapper {
         display: flex;
         justify-content: space-between;
+
+        .imgContainer {
+                width: 25%;
+                box-shadow: 20px 20px $yellow;
+        }
+        
+        .textContainer {
+            width: 65%;
+        }
     }
     
-    .imgContainer {
-        width: 25%;
-        box-shadow: 20px 20px $yellow;
-
-    }
-
-    .textContainer {
-        width: 65%;
-    }
+    
 }
 
 .homeSectionSix {
