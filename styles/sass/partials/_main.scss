@@ -5,6 +5,7 @@
     background-color: $lightGray;
 }
 
+// general styling
 main {
     section {
     display:flex;
@@ -49,6 +50,127 @@ form {
         font-style: italic;
         color: $gray;
     }
+
+}
+// submit button
+
+.submitBtn {
+    color: $black;
+    font-size: 1rem;
+    line-height: 32px;
+    background-color: $aqua;
+    padding: 8px 20px;
+    transition: 0.4s;
+    width: 100%;
+    border: none;
+    box-shadow: none;
+    margin: 20px 0;
+}
+
+.submitBtn:hover,
+.submitBtn:focus {
+    color: $lightGray;
+    background-color: $teal;
+}
+
+//index section
+.homeSectionOne {
+    padding-bottom: 30px;
+}
+.homeSectionTwo {
+    position: relative;
+    
+    p {
+        font-size: 0.9rem;
+    }
+
+    .shadowContainer {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+
+        .rust1 {
+            position: absolute;
+            background-color: $rust;
+            height: 42vh;
+            top: -22px;
+            left: 0;
+            width: 53.6%;
+        }
+
+        .rust2 {
+            position: absolute;
+            background-color: $yellow;
+            height: 43vh;
+            bottom: -66px;
+            right: 0;
+            width: 51.5%;
+        }
+    }
+
+
+    .wrapper {
+            width: 100%;
+    
+            .quadrant {
+                display: flex;
+                justify-content: flex-start;
+                gap: 80px;
+                position: relative;
+    
+                .textContainer {
+                    width: 40%;
+                }
+
+                .imgContainer {
+                    width: 53%;
+                    position: absolute;
+                    z-index: 10;
+                }
+            }
+    
+            .quadOne {
+                justify-content: flex-end;
+                margin-bottom: 80px;
+
+                .imgContainer {
+                    height: 42vh;
+                    bottom: 0;
+                    left: -1px;
+                }
+
+                .textContainer {
+                    display: flex;
+                    flex-direction: column;
+
+                    .btn {
+                        align-self: flex-start;
+                    }
+                }
+            }
+
+            .quadTwo {
+                .imgContainer {
+                    height: 43vh;
+                    right: -1px;
+                }
+                
+                .textContainer {
+                    display: flex;
+                    flex-direction: column;
+                    h3, p {
+                        text-align: right;
+                    }
+
+                    .btn {
+                        align-self: flex-end;
+                    }
+                }
+
+                
+            }
+        }
+
 
 }
 
@@ -209,6 +331,12 @@ form {
                 .spanLink {
                     text-transform: none;
                     color: $teal;
+                    transition: 0.3s;
+                }
+
+                .spanLink:hover,
+                .spanLink:focus {
+                    color: $aqua;
                 }
             }
 
@@ -224,6 +352,13 @@ form {
                     text-transform: none;
                     font-weight: 400;
                     line-height: 30px;
+                    transition: 0.4s;
+                }
+
+                a:hover,
+                a:focus {
+                    text-decoration: underline;
+                    font-weight: 700;
                 }
             }
 
@@ -242,6 +377,12 @@ form {
                 font-weight: 700;
                 text-transform: none;
                 font-style: italic;
+                transition: 0.3s;
+            }
+
+            .spanLink:hover,
+            .spanLink:focus {
+                color: $aqua;
             }
 
             .postContainer,
@@ -268,26 +409,5 @@ form {
 
         }
     }
-
 }
 
-// submit button
-
-.submitBtn {
-    color: $black;
-    font-size: 1rem;
-    line-height: 32px;
-    background-color: $aqua;
-    padding: 8px 20px;
-    transition: 0.4s;
-    width: 100%;
-    border: none;
-    box-shadow: none;
-    margin: 20px 0;
-}
-
-.submitBtn:hover,
-.submitBtn:focus {
-    color: $lightGray;
-    background-color: $teal;
-}

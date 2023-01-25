@@ -8,12 +8,6 @@ nav {
     ul {
         display: flex;
         justify-content: center;
-        
-        .logo {
-            font-family: 'lora', serif;
-            font-size: 2rem;
-            transition: 0.3s ease-in-out;
-        }
 
         .currentPage {
             color: $white;
@@ -28,6 +22,12 @@ nav {
                 transition-duration: 0.5s;
             }
 
+            .logo {
+                font-family: 'lora', serif;
+                font-size: 2rem;
+                transition: 0.3s ease-in-out;
+            }
+
             a:hover,
             a:focus {
                 color: $white;
@@ -39,6 +39,9 @@ nav {
 
                 // figure out how to transition scale
         }
+
+
+
 
         :nth-child(1) {
             order: 3;

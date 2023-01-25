@@ -19,7 +19,7 @@
     <!-- nav (same for all pages) -->
     <nav>
         <ul>
-            <li class="logo">Sophie</li> <!-- scroll to the bottom -->
+            <li><a href="#sophieTag" class="logo">Sophie</a></li>
             <li class="currentPage">Home</li>
             <li><a class="nav2" href="./underConstruction.html">About</a></li>
             <li><a class="nav3" href="./blogPost.html">Blog</a></li>
@@ -43,7 +43,7 @@
     </header>
 
     <main>
-        <section class="homeSectionOne">
+        <section class="homeSectionOne" id="sophieTag">
             <div class="wrapper">
                 <h2>Who is sophie?</h2>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In et risus nec orci ornare condimentum. Nam
@@ -56,11 +56,18 @@
         </section>
     
         <section class="homeSectionTwo">
+            <div class="shadowContainer">
+                <div class="rust1"></div>
+                <div class="rust2"></div>
+            </div>
+
             <div class="wrapper">
-                <div class="quadrantSectionOne">
+                <div class="quadrant quadOne">
                     <div class="imgContainer">
                         <img src="./assets/home-image-2.jpg" alt="Dog looking out of a car window">
+                        
                     </div>
+
                     <div class="textContainer">
                         <h3>Sophie's favourite things</h3>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
@@ -69,7 +76,7 @@
                         <a href="#" class="btn">read more</a>
                     </div>
                 </div>
-                <div class="quadrantSectionOne">
+                <div class="quadrant quadTwo">
                     <div class="imgContainer">
                         <img src="./assets/home-image-3.jpg" alt="Reclining chairs and umbrellas set up on a beach">
                     </div>
@@ -166,3 +173,17 @@
 </body>
 
 </html>
+
+
+            <!-- <div class="quadImgContainer">
+                <div class="imgQuad quadOne">
+                    <div class="imgContainer">
+                        <img src="./assets/home-image-2.jpg" alt="Dog looking out of a car window">
+                    </div>
+                </div>
+                <div class="imgQuad quadTwo">
+                    <div class="imgContainer">
+                        <img src="./assets/home-image-3.jpg" alt="Reclining chairs and umbrellas set up on a beach">
+                    </div>
+                </div>
+            </div> -->
