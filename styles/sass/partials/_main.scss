@@ -12,8 +12,8 @@ main {
 
     p {
             margin-bottom: 35px;
-        }
-    }
+        };
+    };
 
     
     
@@ -25,7 +25,7 @@ main {
         flex-wrap: wrap;
         flex-direction: row;
         justify-content: space-between;
-    }
+    };
     .textBox {
         display: flex;
         width: 48%;
@@ -42,8 +42,8 @@ main {
             justify-content: center;
             align-items: center;
             margin-right: 20px;
-        }
-    }
+        };
+    };
 }
 
 .homeSectionFour {
@@ -57,21 +57,20 @@ main {
     .wrapper {
         display: flex;
         justify-content: space-between;
-    }
+    };
     
     .imgContainer {
         width: 25%;
         box-shadow: 20px 20px $yellow;
 
-    }
+    };
 
     .textContainer {
         width: 65%;
-    }
+    };
 }
 
 .homeSectionSix {
-
     ul {
         display: flex;
         justify-content: center;
@@ -83,9 +82,9 @@ main {
             
             img:focus,img:hover {
                 opacity: 0.7;
-            }
-        }
-    }
+            };
+        };
+    };
 }
 
 // contact section
@@ -100,7 +99,7 @@ main {
         .leftContainer {
             background-color: $white;
             padding: 35px;
-            width: 30%;
+            width: 33%;
             min-width: 360px;
             height: 310px;
 
@@ -112,33 +111,33 @@ main {
                 i {
                     font-size: 1.5rem;
                     color: $yellow;
-                }
+                };
 
                 i:hover,i:focus {
                     color: $gray;
-                }
-            }
+                };
+            };
 
             h5 {
                 margin-bottom: 15px;
                 text-transform: lowercase;
                 font-size: 1.2rem;
-            }
+            };
 
             p {
                 margin-bottom: 0;
                 letter-spacing: 0;
-            }
-        }
+            };
+        };
 
         .rightContainer {
-            width: 65%;
+            width: 67%;
             
 
             form {
                 input, textarea {
                     border: none;
-                }
+                };
 
                 .firstLine {
                     display: flex;
@@ -148,29 +147,100 @@ main {
                     input {
                     width: 50%;
                     padding: 25px 15px;
-                    }
+                    };
 
                     input:placeholder-shown {
                         font-style: italic;
                         color: $gray;
-                    }
-                }
+                    };
+                };
                 
                 textarea {
                     width: 100%;
                     padding: 25px 15px;
-                }
+                };
 
                 input:placeholder-shown, 
                 textarea:placeholder-shown {
                     font-style: italic;
                     color: $gray;
+                };
+
+            };
+        };
+
+    };
+}
+
+//construction
+.constructionSection {
+    height: 60vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    //figure out styling for under construction icon
+}
+
+// blog sections
+.blogSection {
+    background-color: $lightGray;
+
+    .wrapper {
+        display: flex;
+        gap: 50px;
+
+        .leftContainer {
+            width: 33%;
+
+            .profileInfo,
+            .morePosts {
+                background-color: $white;
+                padding: 40px;
+                margin-bottom: 20px;
+            };
+
+            .profileInfo {
+                .profileImgContainer {
+                    margin-bottom: 25px;
+                };
+
+                .spanLink {
+                    text-transform: none;
+                    color: $teal;
+                };
+
+                p {
+                    margin-bottom: 0;
+                };
+            };
+
+            .morePosts {
+                li:before {
+                    content: "∙";
+                    color: $yellow;
+                    display: inline-block;
+                    width: 1rem;
                 }
 
-            }
-        }
+                a {
+                    text-transform: none;
+                    font-weight: 400;
+                    line-height: 30px;
+                }
+            };
 
+            h4 {
+                margin-bottom: 15px;
+                font-size: 1.2rem;
+            };
+        };
+
+        .rightContainer {
+            width: 67%;
+        };
     }
+
 }
 
 // submit button
