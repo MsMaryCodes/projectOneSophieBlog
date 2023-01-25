@@ -227,6 +227,10 @@ html {
   overflow: hidden;
 }
 
+* {
+  border: 0.5px solid red;
+}
+
 ul {
   padding-left: 0;
   list-style: none;
@@ -777,6 +781,7 @@ form textarea:placeholder-shown {
 }
 .blogSection .wrapper .leftContainer {
   width: 33%;
+  position: sticky;
 }
 .blogSection .wrapper .leftContainer .profileInfo,
 .blogSection .wrapper .leftContainer .morePosts {
@@ -886,5 +891,38 @@ footer p {
   .btn {
     font-size: 0.9rem;
     line-height: 28px;
+  }
+  .wrapper {
+    margin: 0 2rem;
+    padding: 80px 0;
+  }
+  .homeHeader {
+    height: 70vh;
+  }
+  .homeHeader .homeTitle h1 {
+    top: 20%;
+    left: 2.8rem;
+    font-size: 6rem;
+  }
+  .homeHeader .homeTitle .titleTag {
+    width: 140px;
+    top: 11%;
+    left: 1.8rem;
+  }
+  .homeHeader .headerContainer {
+    margin: 0 2rem;
+    bottom: -25px;
+  }
+  .homeHeader .headerContainer .headerImg {
+    height: 50vh;
+    width: 50vw;
+  }
+  .otherHeader,
+.blogHeader {
+    height: 30vh;
+  }
+  .otherHeader .wrapper h1,
+.blogHeader .wrapper h1 {
+    bottom: -30px;
   }
 }
