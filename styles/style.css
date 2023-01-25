@@ -574,6 +574,7 @@ form textarea:placeholder-shown {
           justify-content: flex-start;
   gap: 80px;
   position: relative;
+  height: 30vh;
 }
 .homeSectionTwo .wrapper .quadrant .textContainer {
   width: 40%;
@@ -781,7 +782,6 @@ form textarea:placeholder-shown {
 }
 .blogSection .wrapper .leftContainer {
   width: 33%;
-  position: sticky;
 }
 .blogSection .wrapper .leftContainer .profileInfo,
 .blogSection .wrapper .leftContainer .morePosts {
@@ -894,7 +894,7 @@ footer p {
   }
   .wrapper {
     margin: 0 2rem;
-    padding: 80px 0;
+    padding: 60px 0;
   }
   .homeHeader {
     height: 70vh;
@@ -924,6 +924,79 @@ footer p {
   .otherHeader .wrapper h1,
 .blogHeader .wrapper h1 {
     bottom: -30px;
+  }
+  .homeSectionTwo .shadowContainer {
+    display: none;
+  }
+  .homeSectionTwo .wrapper .quadrant {
+    gap: 40px;
+    height: 25vh;
+  }
+  .homeSectionTwo .wrapper .quadrant .textContainer {
+    width: 60%;
+  }
+  .homeSectionTwo .wrapper .quadrant .imgContainer {
+    width: 35%;
+    height: 100%;
+    position: relative;
+  }
+  .homeSectionTwo .wrapper .quadOne {
+    margin-bottom: 60px;
+  }
+  .homeSectionTwo .wrapper .quadOne .imgContainer {
+    -webkit-box-shadow: -15px 15px #a82706;
+            box-shadow: -15px 15px #a82706;
+  }
+  .homeSectionTwo .wrapper .quadTwo {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
+  }
+  .homeSectionTwo .wrapper .quadTwo .imgContainer {
+    -webkit-box-shadow: 15px 15px #f6a823;
+            box-shadow: 15px 15px #f6a823;
+  }
+  .homeSectionThree .textBox {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    max-width: 48vw;
+  }
+  .homeSectionThree .textBox .icon {
+    margin-bottom: 10px;
+    width: 32px;
+    height: 32px;
+  }
+  .homeSectionThree .textBox .icon i {
+    font-size: 1.2rem;
+  }
+  .homeSectionThree .textBox .text {
+    text-align: center;
+  }
+  .homeSectionThree .textBox .text h3 {
+    margin-bottom: 12px;
+  }
+  .homeSectionFour {
+    height: 35vh;
+  }
+  .homeSectionFive .imgContainer {
+    width: 30%;
+    -webkit-box-shadow: 15px 15px #f6a823;
+            box-shadow: 15px 15px #f6a823;
+  }
+  .homeSectionSix ul {
+    gap: 20px;
+  }
+  .homeSectionSix ul li {
+    width: 33%;
   }
   .contactSection .wrapper {
     -webkit-box-orient: vertical;

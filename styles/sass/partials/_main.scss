@@ -117,6 +117,7 @@ form {
                 justify-content: flex-start;
                 gap: 80px;
                 position: relative;
+                height: 30vh;
     
                 .textContainer {
                     width: 40%;
@@ -315,7 +316,6 @@ form {
 
         .leftContainer {
             width: 33%;
-            position: sticky;
 
             .profileInfo,
             .morePosts {
