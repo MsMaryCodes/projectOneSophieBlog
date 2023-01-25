@@ -369,7 +369,8 @@ nav ul :nth-child(5) {
       -ms-flex-order: 5;
           order: 5;
 }
-nav .hamNav {
+
+.navMenu2 {
   display: none;
 }
 
@@ -1085,55 +1086,80 @@ footer p {
   form textarea {
     height: 35vh;
   }
-  nav {
-    padding: 12px 0;
+  .navMenu1 {
+    display: none;
+  }
+  .navMenu2 {
+    display: block;
+  }
+  .navMenu2 * {
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+  }
+  .navMenu2 .container {
+    width: 100%;
+    margin: auto;
+  }
+  .navMenu2 .navbar {
+    width: 100%;
+    -webkit-box-shadow: 0 1px 4px rgba(146, 161, 176, 0.15);
+            box-shadow: 0 1px 4px rgba(146, 161, 176, 0.15);
+  }
+  .navMenu2 .nav-container {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    height: 62px;
   }
-  nav * {
-    border: 0.5px solid red;
+  .navMenu2 .navbar .menu-items {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
   }
-  nav ul {
-    -webkit-box-pack: start;
-        -ms-flex-pack: start;
-            justify-content: flex-start;
+  .navMenu2 .navbar .nav-container li {
+    list-style: none;
   }
-  nav ul :nth-child(1) {
-    -webkit-box-ordinal-group: 2;
-        -ms-flex-order: 1;
-            order: 1;
+  .navMenu2 .navbar .nav-container a {
+    text-decoration: none;
+    color: #2c2c2c;
+    font-weight: 500;
+    font-size: 1.2rem;
+    padding: 0.7rem;
   }
-  nav ul :nth-child(2),
-nav ul :nth-child(3),
-nav ul :nth-child(4),
-nav ul :nth-child(5) {
-    display: none;
+  .navMenu2 .navbar .nav-container a:hover {
+    font-weight: bolder;
   }
-  nav .navBar {
-    margin-right: 20px;
+  .navMenu2 .nav-container {
+    display: block;
+    position: relative;
+    height: 60px;
   }
-  nav .navBar .navContainer .checkbox {
+  .navMenu2 .nav-container .checkbox {
     position: absolute;
     display: block;
     height: 32px;
     width: 32px;
     top: 20px;
-    right: 20px;
+    left: 20px;
     z-index: 5;
     opacity: 0;
     cursor: pointer;
   }
-  nav .navBar .navContainer .hamburger-lines {
+  .navMenu2 .nav-container .hamburger-lines {
     display: block;
     height: 26px;
     width: 32px;
     position: absolute;
     top: 17px;
-    right: 20px;
+    left: 20px;
     z-index: 2;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1146,14 +1172,14 @@ nav ul :nth-child(5) {
         -ms-flex-pack: justify;
             justify-content: space-between;
   }
-  nav .navBar .navContainer .hamburger-lines .line {
+  .navMenu2 .nav-container .hamburger-lines .line {
     display: block;
-    height: 5px;
+    height: 4px;
     width: 100%;
     border-radius: 10px;
-    background: #2c2c2c;
+    background: #0e2431;
   }
-  nav .navBar .navContainer .hamburger-lines .line1 {
+  .navMenu2 .nav-container .hamburger-lines .line1 {
     -webkit-transform-origin: 0% 0%;
             transform-origin: 0% 0%;
     -webkit-transition: -webkit-transform 0.4s ease-in-out;
@@ -1161,13 +1187,13 @@ nav ul :nth-child(5) {
     transition: transform 0.4s ease-in-out;
     transition: transform 0.4s ease-in-out, -webkit-transform 0.4s ease-in-out;
   }
-  nav .navBar .navContainer .hamburger-lines .line2 {
+  .navMenu2 .nav-container .hamburger-lines .line2 {
     -webkit-transition: -webkit-transform 0.2s ease-in-out;
     transition: -webkit-transform 0.2s ease-in-out;
     transition: transform 0.2s ease-in-out;
     transition: transform 0.2s ease-in-out, -webkit-transform 0.2s ease-in-out;
   }
-  nav .navBar .navContainer .hamburger-lines .line3 {
+  .navMenu2 .nav-container .hamburger-lines .line3 {
     -webkit-transform-origin: 0% 100%;
             transform-origin: 0% 100%;
     -webkit-transition: -webkit-transform 0.4s ease-in-out;
@@ -1175,19 +1201,14 @@ nav ul :nth-child(5) {
     transition: transform 0.4s ease-in-out;
     transition: transform 0.4s ease-in-out, -webkit-transform 0.4s ease-in-out;
   }
-  nav .navBar .navContainer input[type=checkbox]:checked ~ .hamburger-lines .line1 {
-    -webkit-transform: rotate(45deg);
-            transform: rotate(45deg);
-  }
-  nav .navBar .navContainer input[type=checkbox]:checked ~ .hamburger-lines .line2 {
-    -webkit-transform: scaleY(0);
-            transform: scaleY(0);
-  }
-  nav .navBar .navContainer input[type=checkbox]:checked ~ .hamburger-lines .line3 {
-    -webkit-transform: rotate(-45deg);
-            transform: rotate(-45deg);
-  }
-  nav .navBar .menu ul {
+  .navMenu2 .navbar .menu-items {
+    padding-top: 120px;
+    -webkit-box-shadow: inset 0 0 2000px #f6a823;
+            box-shadow: inset 0 0 2000px #f6a823;
+    height: 100vh;
+    width: 100%;
+    -webkit-transform: translate(-150%);
+            transform: translate(-150%);
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1195,12 +1216,44 @@ nav ul :nth-child(5) {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    margin-left: -40px;
+    padding-left: 50px;
+    -webkit-transition: -webkit-transform 0.5s ease-in-out;
+    transition: -webkit-transform 0.5s ease-in-out;
+    transition: transform 0.5s ease-in-out;
+    transition: transform 0.5s ease-in-out, -webkit-transform 0.5s ease-in-out;
+    text-align: center;
   }
-  nav .navBar .menu ul :nth-child(2),
-nav .navBar .menu ul :nth-child(3),
-nav .navBar .menu ul :nth-child(4),
-nav .navBar .menu ul :nth-child(5) {
-    display: block;
+  .navMenu2 .navbar .menu-items li {
+    margin-bottom: 1.2rem;
+    font-size: 1.5rem;
+    font-weight: 500;
+  }
+  .navMenu2 .logo {
+    position: absolute;
+    top: 5px;
+    right: 15px;
+    font-size: 1.2rem;
+    color: #2c2c2c;
+  }
+  .navMenu2 .nav-container input[type=checkbox]:checked ~ .menu-items {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+  .navMenu2 .nav-container input[type=checkbox]:checked ~ .hamburger-lines .line1 {
+    -webkit-transform: rotate(45deg);
+            transform: rotate(45deg);
+  }
+  .navMenu2 .nav-container input[type=checkbox]:checked ~ .hamburger-lines .line2 {
+    -webkit-transform: scaleY(0);
+            transform: scaleY(0);
+  }
+  .navMenu2 .nav-container input[type=checkbox]:checked ~ .hamburger-lines .line3 {
+    -webkit-transform: rotate(-45deg);
+            transform: rotate(-45deg);
+  }
+  .navMenu2 .nav-container input[type=checkbox]:checked ~ .logo {
+    display: none;
   }
   .homeHeader {
     height: 80vh;
