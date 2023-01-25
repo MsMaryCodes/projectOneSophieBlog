@@ -40,9 +40,6 @@ nav {
                 // figure out how to transition scale
         }
 
-
-
-
         :nth-child(1) {
             order: 3;
         }
@@ -63,6 +60,10 @@ nav {
             order: 5;
         }
 
+    }
+
+    .hamNav {
+        display: none;
     }
 }
 

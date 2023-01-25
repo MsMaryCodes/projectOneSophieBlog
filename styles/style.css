@@ -369,6 +369,9 @@ nav ul :nth-child(5) {
       -ms-flex-order: 5;
           order: 5;
 }
+nav .hamNav {
+  display: none;
+}
 
 .homeHeader {
   background: #f6a823;
@@ -546,7 +549,7 @@ form textarea:placeholder-shown {
   position: absolute;
   background-color: #a82706;
   height: 42vh;
-  top: -22px;
+  top: -16px;
   left: 0;
   width: 53.6%;
 }
@@ -1084,6 +1087,15 @@ footer p {
   }
   nav {
     padding: 12px 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  nav * {
+    border: 0.5px solid red;
   }
   nav ul {
     -webkit-box-pack: start;
@@ -1100,6 +1112,95 @@ nav ul :nth-child(3),
 nav ul :nth-child(4),
 nav ul :nth-child(5) {
     display: none;
+  }
+  nav .navBar {
+    margin-right: 20px;
+  }
+  nav .navBar .navContainer .checkbox {
+    position: absolute;
+    display: block;
+    height: 32px;
+    width: 32px;
+    top: 20px;
+    right: 20px;
+    z-index: 5;
+    opacity: 0;
+    cursor: pointer;
+  }
+  nav .navBar .navContainer .hamburger-lines {
+    display: block;
+    height: 26px;
+    width: 32px;
+    position: absolute;
+    top: 17px;
+    right: 20px;
+    z-index: 2;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  nav .navBar .navContainer .hamburger-lines .line {
+    display: block;
+    height: 5px;
+    width: 100%;
+    border-radius: 10px;
+    background: #2c2c2c;
+  }
+  nav .navBar .navContainer .hamburger-lines .line1 {
+    -webkit-transform-origin: 0% 0%;
+            transform-origin: 0% 0%;
+    -webkit-transition: -webkit-transform 0.4s ease-in-out;
+    transition: -webkit-transform 0.4s ease-in-out;
+    transition: transform 0.4s ease-in-out;
+    transition: transform 0.4s ease-in-out, -webkit-transform 0.4s ease-in-out;
+  }
+  nav .navBar .navContainer .hamburger-lines .line2 {
+    -webkit-transition: -webkit-transform 0.2s ease-in-out;
+    transition: -webkit-transform 0.2s ease-in-out;
+    transition: transform 0.2s ease-in-out;
+    transition: transform 0.2s ease-in-out, -webkit-transform 0.2s ease-in-out;
+  }
+  nav .navBar .navContainer .hamburger-lines .line3 {
+    -webkit-transform-origin: 0% 100%;
+            transform-origin: 0% 100%;
+    -webkit-transition: -webkit-transform 0.4s ease-in-out;
+    transition: -webkit-transform 0.4s ease-in-out;
+    transition: transform 0.4s ease-in-out;
+    transition: transform 0.4s ease-in-out, -webkit-transform 0.4s ease-in-out;
+  }
+  nav .navBar .navContainer input[type=checkbox]:checked ~ .hamburger-lines .line1 {
+    -webkit-transform: rotate(45deg);
+            transform: rotate(45deg);
+  }
+  nav .navBar .navContainer input[type=checkbox]:checked ~ .hamburger-lines .line2 {
+    -webkit-transform: scaleY(0);
+            transform: scaleY(0);
+  }
+  nav .navBar .navContainer input[type=checkbox]:checked ~ .hamburger-lines .line3 {
+    -webkit-transform: rotate(-45deg);
+            transform: rotate(-45deg);
+  }
+  nav .navBar .menu ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  nav .navBar .menu ul :nth-child(2),
+nav .navBar .menu ul :nth-child(3),
+nav .navBar .menu ul :nth-child(4),
+nav .navBar .menu ul :nth-child(5) {
+    display: block;
   }
   .homeHeader {
     height: 80vh;
