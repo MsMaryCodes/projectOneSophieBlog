@@ -1055,3 +1055,40 @@ footer p {
     width: 100%;
   }
 }
+@media (max-width: 500px) {
+  h1 {
+    font-size: 2.8rem;
+    line-height: 50px;
+  }
+  h2 {
+    font-size: 1.6rem;
+  }
+  h3, h4, h5 {
+    font-size: 1.1rem;
+  }
+  .btn {
+    padding: 10px 16px;
+  }
+  .wrapper {
+    margin: 0 1.2rem;
+  }
+  nav {
+    padding: 12px 0;
+  }
+  nav ul {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+  nav ul :nth-child(1) {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+  }
+  nav ul :nth-child(2),
+nav ul :nth-child(3),
+nav ul :nth-child(4),
+nav ul :nth-child(5) {
+    display: none;
+  }
+}
