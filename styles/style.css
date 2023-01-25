@@ -227,10 +227,6 @@ html {
   overflow: hidden;
 }
 
-* {
-  border: 1px solid red;
-}
-
 ul {
   padding-left: 0;
   list-style: none;
@@ -465,6 +461,51 @@ main section p {
   margin-bottom: 35px;
 }
 
+form input,
+form textarea {
+  border: none;
+}
+form .firstLine {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 12px;
+  margin-bottom: 20px;
+}
+form .firstLine input {
+  width: 50%;
+  padding: 25px 15px;
+}
+form .firstLine input:-moz-placeholder-shown {
+  font-style: italic;
+  color: #4f4f4f;
+}
+form .firstLine input:-ms-input-placeholder {
+  font-style: italic;
+  color: #4f4f4f;
+}
+form .firstLine input:placeholder-shown {
+  font-style: italic;
+  color: #4f4f4f;
+}
+form textarea {
+  width: 100%;
+  padding: 25px 15px;
+}
+form input:-moz-placeholder-shown, form textarea:-moz-placeholder-shown {
+  font-style: italic;
+  color: #4f4f4f;
+}
+form input:-ms-input-placeholder, form textarea:-ms-input-placeholder {
+  font-style: italic;
+  color: #4f4f4f;
+}
+form input:placeholder-shown,
+form textarea:placeholder-shown {
+  font-style: italic;
+  color: #4f4f4f;
+}
+
 .homeSectionThree .wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -541,7 +582,7 @@ main section p {
   gap: 50px;
 }
 .homeSectionSix ul li {
-  width: 33%;
+  width: 30%;
 }
 .homeSectionSix ul li img:focus, .homeSectionSix ul li img:hover {
   opacity: 0.7;
@@ -588,50 +629,7 @@ main section p {
   letter-spacing: 0;
 }
 .contactSection .wrapper .rightContainer {
-  width: 67%;
-}
-.contactSection .wrapper .rightContainer form input, .contactSection .wrapper .rightContainer form textarea {
-  border: none;
-}
-.contactSection .wrapper .rightContainer form .firstLine {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  gap: 12px;
-  margin-bottom: 20px;
-}
-.contactSection .wrapper .rightContainer form .firstLine input {
-  width: 50%;
-  padding: 25px 15px;
-}
-.contactSection .wrapper .rightContainer form .firstLine input:-moz-placeholder-shown {
-  font-style: italic;
-  color: #4f4f4f;
-}
-.contactSection .wrapper .rightContainer form .firstLine input:-ms-input-placeholder {
-  font-style: italic;
-  color: #4f4f4f;
-}
-.contactSection .wrapper .rightContainer form .firstLine input:placeholder-shown {
-  font-style: italic;
-  color: #4f4f4f;
-}
-.contactSection .wrapper .rightContainer form textarea {
-  width: 100%;
-  padding: 25px 15px;
-}
-.contactSection .wrapper .rightContainer form input:-moz-placeholder-shown, .contactSection .wrapper .rightContainer form textarea:-moz-placeholder-shown {
-  font-style: italic;
-  color: #4f4f4f;
-}
-.contactSection .wrapper .rightContainer form input:-ms-input-placeholder, .contactSection .wrapper .rightContainer form textarea:-ms-input-placeholder {
-  font-style: italic;
-  color: #4f4f4f;
-}
-.contactSection .wrapper .rightContainer form input:placeholder-shown,
-.contactSection .wrapper .rightContainer form textarea:placeholder-shown {
-  font-style: italic;
-  color: #4f4f4f;
+  width: 70%;
 }
 
 .constructionSection {
@@ -650,11 +648,14 @@ main section p {
 .blogSection {
   background-color: #f0efed;
 }
+.blogSection p {
+  margin-bottom: 15px;
+}
 .blogSection .wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  gap: 50px;
+  gap: 40px;
 }
 .blogSection .wrapper .leftContainer {
   width: 33%;
@@ -672,9 +673,6 @@ main section p {
   text-transform: none;
   color: #285e64;
 }
-.blogSection .wrapper .leftContainer .profileInfo p {
-  margin-bottom: 0;
-}
 .blogSection .wrapper .leftContainer .morePosts li:before {
   content: "∙";
   color: #f6a823;
@@ -691,7 +689,37 @@ main section p {
   font-size: 1.2rem;
 }
 .blogSection .wrapper .rightContainer {
-  width: 67%;
+  width: 70%;
+}
+.blogSection .wrapper .rightContainer .spanLink,
+.blogSection .wrapper .rightContainer .commentTitle {
+  color: #285e64;
+  font-weight: 700;
+  text-transform: none;
+  font-style: italic;
+}
+.blogSection .wrapper .rightContainer .postContainer,
+.blogSection .wrapper .rightContainer .firstComment,
+.blogSection .wrapper .rightContainer .secondComment {
+  background-color: white;
+  padding: 40px 60px 40px 40px;
+  margin-bottom: 20px;
+  border-bottom: 5px solid #f6a823;
+}
+.blogSection .wrapper .rightContainer .firstComment,
+.blogSection .wrapper .rightContainer .secondComment {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  gap: 20px;
+}
+.blogSection .wrapper .rightContainer .firstComment .comImgContainer,
+.blogSection .wrapper .rightContainer .secondComment .comImgContainer {
+  height: 120px;
+  min-width: 120px;
 }
 
 .submitBtn {
