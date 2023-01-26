@@ -1204,11 +1204,8 @@ footer p {
   }
   .navMenu2 .navbar .menu-items {
     padding-top: 120px;
-    -webkit-box-shadow: inset 0 0 2000px #f6a823;
-            box-shadow: inset 0 0 2000px #f6a823;
     background-color: #f6a823;
     height: 100vh;
-    width: 100%;
     -webkit-transform: translate(-200%);
             transform: translate(-200%);
     display: -webkit-box;
