@@ -48,14 +48,14 @@
         }
 
     
-        .container {
-            width: 100%;
-            margin: auto;
-        }
-    
+        
         .navbar {
             width: 100%;
-            box-shadow: 0 1px 4px rgb(146 161 176 / 15%);
+            
+            .container {
+                    width: 100%;
+                    margin: auto;
+                }
         }
     
         .nav-container {
@@ -63,26 +63,30 @@
             justify-content: space-between;
             align-items: center;
             height: 62px;
+
+            li {
+                    list-style: none;
+                }
+
+            a {
+                text-decoration: none;
+                color: $black;
+                padding: 0.7rem;
+            }
+
+            a:hover {
+                font-weight: bolder;
+                color: $white;
+            }
+
+            .currentPage {
+                color: white;
+                font-weight: 700;
+            }
         }
     
         .navbar .menu-items {
             display: flex;
-        }
-    
-        .navbar .nav-container li {
-            list-style: none;
-        }
-    
-        .navbar .nav-container a {
-            text-decoration: none;
-            color: $black;
-            font-weight: 500;
-            font-size: 1.2rem;
-            padding: 0.7rem;
-        }
-    
-        .navbar .nav-container a:hover {
-            font-weight: bolder;
         }
     
         .nav-container {
@@ -118,10 +122,10 @@
     
         .nav-container .hamburger-lines .line {
             display: block;
-            height: 4px;
+            height: 5px;
             width: 100%;
             border-radius: 10px;
-            background: #0e2431;
+            background: $black;
         }
     
         .nav-container .hamburger-lines .line1 {
@@ -141,9 +145,10 @@
         .navbar .menu-items {
             padding-top: 120px;
             box-shadow: inset 0 0 2000px $yellow;
+            background-color: $yellow;;
             height: 100vh;
             width: 100%;
-            transform: translate(-150%);
+            transform: translate(-200%);
             display: flex;
             flex-direction: column;
             margin-left: -40px;
