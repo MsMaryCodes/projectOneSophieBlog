@@ -918,11 +918,11 @@ footer p {
     width: 50vw;
   }
   .otherHeader,
-.blogHeader {
+  .blogHeader {
     height: 30vh;
   }
   .otherHeader .wrapper h1,
-.blogHeader .wrapper h1 {
+  .blogHeader .wrapper h1 {
     bottom: -30px;
   }
   .homeSectionTwo .shadowContainer {
@@ -1378,12 +1378,12 @@ footer p {
     height: 350px;
   }
   .blogSection .wrapper .rightContainer .postContainer,
-.blogSection .wrapper .rightContainer .firstComment,
-.blogSection .wrapper .rightContainer .secondComment {
+  .blogSection .wrapper .rightContainer .firstComment,
+  .blogSection .wrapper .rightContainer .secondComment {
     padding: 20px;
   }
   .blogSection .wrapper .firstComment,
-.blogSection .wrapper .secondComment {
+  .blogSection .wrapper .secondComment {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -1394,7 +1394,7 @@ footer p {
     gap: 12px;
   }
   .blogSection .wrapper .firstComment .comImgContainer,
-.blogSection .wrapper .secondComment .comImgContainer {
+  .blogSection .wrapper .secondComment .comImgContainer {
     width: 120px;
   }
 }
