@@ -5,6 +5,17 @@ nav {
     top: 0;
     z-index: 300;
 
+    .hamBtn {
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+        color: $black;
+        font-size: 3rem;
+        float: right;
+        margin-right: 1.2rem;
+        display: none;
+    }
+
     ul {
         display: flex;
         justify-content: center;
@@ -33,11 +44,6 @@ nav {
                 color: $white;
             }
 
-                // &:hover {
-                //     transform: scale(0.90);
-                // }
-
-                // figure out how to transition scale
         }
 
         :nth-child(1) {
@@ -61,10 +67,6 @@ nav {
         }
 
     }
-}
-
-.navMenu2 {
-    display: none;
 }
 
 // highlight current location if home, home is highlighted 
