@@ -36,9 +36,14 @@
     //nav 
     nav {
         position: relative;
+        height: 0;
+        padding: 0;
 
         .hamBtn {
                 display: block;
+                z-index: 1000;
+                margin-top: 10px;
+                position: sticky;
         }
 
         ul {
@@ -69,7 +74,7 @@
             :nth-child(5) {order: 5}
         }
 
-        nav ul.show {
+        .show {
             display: flex;
         }
     

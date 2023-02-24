@@ -1094,9 +1094,14 @@ footer p {
   }
   nav {
     position: relative;
+    height: 0;
+    padding: 0;
   }
   nav .hamBtn {
     display: block;
+    z-index: 1000;
+    margin-top: 10px;
+    position: sticky;
   }
   nav ul {
     position: absolute;
@@ -1144,7 +1149,7 @@ footer p {
         -ms-flex-order: 5;
             order: 5;
   }
-  nav nav ul.show {
+  nav .show {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
