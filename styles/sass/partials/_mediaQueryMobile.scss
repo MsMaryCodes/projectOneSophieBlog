@@ -106,12 +106,16 @@
         }
     }
 
-    .blogHeader {
-        background-position: -420px center;
+    .blogHeader,
+    .otherHeader {
+        height: 43vh;
+        background-position: center right -250px;
     }
 
     .construction {
-        font-size: 2.4rem;
+        font-size: 1.4rem;
+        line-height: 32px;
+        top: 75%;
     }
 
 
@@ -205,6 +209,20 @@
     // construction
     .constructionSection {
         text-align: center;
+    }
+
+    // contact
+    .contactSection {
+        .wrapper {
+            .leftContainer {
+                min-width: 0;
+                padding: 5px;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+            }
+
+        }
     }
 
     // blog
