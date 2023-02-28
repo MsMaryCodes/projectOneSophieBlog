@@ -227,6 +227,10 @@ html {
   overflow: hidden;
 }
 
+* {
+  border: 1px solid red;
+}
+
 ul {
   padding-left: 0;
   list-style: none;
@@ -310,6 +314,41 @@ img {
 .removeScrolling {
   height: 100%;
   overflow: hidden;
+}
+
+#topBtn {
+  width: 60px;
+  height: 60px;
+  padding: 20px;
+  border-radius: 50px;
+  font-size: 2rem;
+  background-color: #a82706;
+  color: white;
+  position: fixed;
+  z-index: 500;
+  bottom: 60px;
+  right: 60px;
+  display: none;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+#topBtn:hover,
+#topBtn:focus {
+  cursor: pointer;
+  background-color: #4f4f4f;
+}
+
+.show {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 nav {
@@ -1094,6 +1133,10 @@ footer p {
   form textarea {
     height: 35vh;
   }
+  #topBtn {
+    bottom: 20px;
+    right: 20px;
+  }
   nav {
     position: relative;
     height: 0;
@@ -1150,11 +1193,6 @@ footer p {
     -webkit-box-ordinal-group: 6;
         -ms-flex-order: 5;
             order: 5;
-  }
-  nav .show {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
   }
   .homeHeader {
     height: 70vh;

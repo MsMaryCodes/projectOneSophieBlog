@@ -34,6 +34,11 @@
     }
 
     //nav 
+    #topBtn {
+        bottom: 20px;
+        right: 20px;
+    }
+
     nav {
         position: relative;
         height: 0;
@@ -72,10 +77,6 @@
             :nth-child(4) {order: 4}
 
             :nth-child(5) {order: 5}
-        }
-
-        .show {
-            display: flex;
         }
     
     }
