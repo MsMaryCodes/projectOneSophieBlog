@@ -1,5 +1,6 @@
 // namespace
 const app = {}
+const body = document.querySelector('body');
 
 // init method
 app.init = () => {
@@ -7,7 +8,7 @@ app.init = () => {
     app.scrollListener();
 };
 
-const body = document.querySelector('body');
+
 
 // method to listen for click on hamburger menu button
 app.hamBtnListener = () => {

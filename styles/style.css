@@ -227,10 +227,6 @@ html {
   overflow: hidden;
 }
 
-* {
-  border: 1px solid red;
-}
-
 ul {
   padding-left: 0;
   list-style: none;
