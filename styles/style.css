@@ -715,6 +715,7 @@ form textarea:placeholder-shown {
 }
 .homeSectionSix ul li img:focus, .homeSectionSix ul li img:hover {
   opacity: 0.7;
+  cursor: pointer;
 }
 
 .contactSection {
@@ -877,6 +878,22 @@ footer {
 footer p {
   text-align: center;
   color: white;
+}
+
+* {
+  border: 1px solid red;
+}
+
+.modalContainer {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(44, 44, 44, 0.8);
+}
+.modalContainer #modalClose {
+  background-color: transparent;
+  border: none;
+  font-size: 2rem;
 }
 
 @media (max-width: 1000px) {

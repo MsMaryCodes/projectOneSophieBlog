@@ -1,0 +1,21 @@
+* {
+    border: 1px solid red;
+
+}
+.modalContainer {
+    position: fixed; 
+    width: 100vw;
+    height: 100vh;
+    // z-index: 10000;
+    background-color: rgb(44, 44, 44, 0.8);
+
+
+    #modalClose {
+        background-color: transparent;
+        border: none;
+        font-size: 2rem;
+
+    
+    }
+
+}
