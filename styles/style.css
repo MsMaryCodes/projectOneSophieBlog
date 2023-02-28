@@ -307,6 +307,11 @@ img {
   background-color: #285e64;
 }
 
+.removeScrolling {
+  height: 100%;
+  overflow: hidden;
+}
+
 nav {
   background-color: #f6a823;
   padding: 20px 0;

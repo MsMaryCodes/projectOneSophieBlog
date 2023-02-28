@@ -80,3 +80,8 @@ img {
     color: $lightGray;
     background-color: $teal;
 }
+
+.removeScrolling {
+    height: 100%;
+    overflow: hidden;
+}
