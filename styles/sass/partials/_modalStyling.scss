@@ -6,16 +6,49 @@
     position: fixed; 
     width: 100vw;
     height: 100vh;
-    // z-index: 10000;
+    left: 0;
+    top: 0;
+    z-index: 800;
     background-color: rgb(44, 44, 44, 0.8);
+    display: none;
 
 
     #modalClose {
         background-color: transparent;
         border: none;
         font-size: 2rem;
-
-    
+        color: $yellow;
+        
+        position: absolute;
+        right: 40px;
+        top: 20px;
     }
+
+    #modalClose:hover,
+    #modalClose:focus {
+        color: $white;
+        cursor: pointer;
+    }
+
+    .modalContent {
+        margin-top: 100px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        .modalImg {
+                width: 60%;
+            }
+
+        .modalPara {
+            color: $white;
+            font-weight: bolder;
+            font-size: 1.5rem;
+
+            margin-top: 20px;
+        }
+    }
+    
 
 }
